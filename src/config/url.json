@@ -1,0 +1,10 @@
+{
+  "whiteList": [
+    "/pcs/accesstoken",
+    "/pcs/healthcheck"
+  ],
+  "endpoint": {
+    "ccaportal": "https://hfccap2.qa.webex.com",
+    "pcs": "https://hfccap2.qa.webex.com"
+  }
+}

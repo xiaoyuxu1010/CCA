@@ -1,0 +1,21 @@
+{
+  "commonIdentity": {
+    "scopes": [
+      "Identity:SCIM",
+      "Identity:Organization",
+      "Identity:Config",
+      "cca-portal:callbackgroup",
+      "cca-portal:telephonydomain"
+    ],
+    "bts": {
+      "clientId": "C1df3b9533b38c3d8141a1e6c64322a6c3f17ddfe6150a118c430da203a6e7ad9",
+      "authorizeUrl": "https://idbrokerbts.webex.com/idb/oauth2/v1/authorize?user_oauth_approval=true&cisService=meetings",
+      "redirectUrl": "http://localhost:8021/ccaportal/oauth2-login"
+    },
+    "production": {
+      "clientId": "C1df3b9533b38c3d8141a1e6c64322a6c3f17ddfe6150a118c430da203a6e7ad9",
+      "authorizeUrl": "https://idbroker.webex.com/idb/oauth2/v1/authorize?user_oauth_approval=true&cisService=meetings",
+      "redirectUrl": "http://localhost:8021/ccaportal/oauth2-login"
+    }
+  }  
+}
