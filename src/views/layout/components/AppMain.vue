@@ -16,7 +16,7 @@ export default {
       return null // this.$store.state.tagsView.cachedViews
     },
     key () {
-      return this.$route.fullPath
+      return this.$route.fullPath + new Date().toString()
     }
   }
 }

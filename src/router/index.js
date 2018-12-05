@@ -14,6 +14,16 @@ export const constantRouterMap = [
     hidden: true,
     meta: { requiresAuth: false }
   }, {
+    path: '/redirect',
+    component: Layout,
+    hidden: true,
+    children: [
+      {
+        path: '/redirect/:path*',
+        component: () => import('@/views/redirect/index')
+      }
+    ]
+  }, {
     path: '',
     component: Layout,
     redirect: { name: 'Configuration' },
@@ -22,7 +32,7 @@ export const constantRouterMap = [
         path: 'configuration',
         component: () => import('@/views/configuration/index'),
         name: 'Configuration',
-        meta: { requiresAuth: true, title: 'configuration', icon: 'dashboard' }
+        meta: { requiresAuth: true, title: 'configuration', icon: 'configuration' }
       }
     ]
   }
