@@ -16,7 +16,7 @@ export default {
       return null // this.$store.state.tagsView.cachedViews
     },
     key () {
-      return this.$route.fullPath + new Date().toString()
+      return this.$route.fullPath + '_' + new Date().getTime()
     }
   }
 }
@@ -29,5 +29,6 @@ export default {
   width: 100%;
   position: relative;
   overflow: hidden;
+  padding-top: 20px;
 }
 </style>

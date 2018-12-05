@@ -35,6 +35,25 @@ export const constantRouterMap = [
         meta: { requiresAuth: true, title: 'configuration', icon: 'configuration' }
       }
     ]
+  }, {
+    path: '/adminstration',
+    component: Layout,
+    name: 'Adminstration',
+    meta: { title: 'adminstration', icon: '404' },
+    redirect: 'noredirect',
+    children: [
+      {
+        path: 'telemetry',
+        component: () => import('@/views/adminstration/telemetry'),
+        name: 'Telemetry',
+        meta: { requiresAuth: true, title: 'telemetry', icon: 'configuration' }
+      }, {
+        path: 'settings',
+        component: () => import('@/views/adminstration/settings'),
+        name: 'Settings',
+        meta: { requiresAuth: true, title: 'settings', icon: 'configuration' }
+      }
+    ]
   }
 ]
 

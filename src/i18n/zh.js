@@ -1,6 +1,9 @@
 export default {
   route: {
     configuration: '配置',
+    adminstration: '管理',
+    telemetry: '度量',
+    settings: '设置',
     dashboard: '首页',
     introduction: '简述',
     documentation: '文档',

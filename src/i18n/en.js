@@ -1,6 +1,9 @@
 export default {
   route: {
     configuration: 'Configuration',
+    adminstration: 'Adminstration',
+    telemetry: 'Telemetry',
+    settings: 'Settings',
     dashboard: 'Dashboard',
     introduction: 'Introduction',
     documentation: 'Documentation',
